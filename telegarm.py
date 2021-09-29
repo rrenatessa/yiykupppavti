@@ -16,8 +16,9 @@ def welcome(message):
     item1 = types.KeyboardButton("🎲 Рандомное число")
     item2 = types.KeyboardButton("😊 Как дела?")
     item3 = types.KeyboardButton("😊 Коромысло чтобы архивировать")
+    item4 = types.KeyboardButton("😊 Коромысло чтобы архивировать")
  
-    markup.add(item1, item2, item3)
+    markup.add(item1, item2, item3, item4)
  
     bot.send_message(message.chat.id, "Добро пожаловать, {0.first_name}!\nЯ - <b>{1.first_name}</b>, бот созданный чтобы быть подопытным кроликом интеллектуального клуба.".format(message.from_user, bot.get_me()),
         parse_mode='html', reply_markup=markup)
